@@ -1,0 +1,8 @@
+{
+  "collected_at_utc": "2026-05-22T04:23:56.923778+00:00",
+  "lead_time_hours": 6.5,
+  "deployment_frequency_per_week": 10,
+  "mttr_minutes": 35,
+  "change_failure_rate_percent": 8.0,
+  "mttr_improvement_action": "Create runbook + on-call alert template to reduce diagnosis time."
+}
