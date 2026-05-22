@@ -6,6 +6,13 @@
 ## 목표
 - 실습기반 시험 문항(협업, CI, 테스트, Feature Flag, 배포/메트릭)을 직접 구현
 
+## 브랜치 전략 (GitHub Flow)
+1. `main`은 항상 배포 가능한 상태를 유지합니다.
+2. 작업은 `feature/*` 브랜치에서 짧게 수행하고 자주 커밋합니다.
+3. 모든 변경은 Pull Request로 병합하며, PR에 테스트 결과와 롤백 계획을 남깁니다.
+4. CI 실패 시 원인을 기록하고 수정 커밋으로 재실행해 성공 이력을 남깁니다.
+5. 기능 플래그는 기본 OFF로 배포해 위험을 낮춘 뒤 점진적으로 ON 합니다.
+
 ## 빠른 시작
 ```bash
 python -m venv .venv
@@ -46,3 +53,8 @@ python -m app.main
 - 테스트 통과 로그 첨부
 - CI 실행 링크 첨부
 - 배포/메트릭 결과 파일 첨부
+
+## 실행 증빙 파일
+- 배포 결과: `artifacts/deployment_result.json`
+- DORA 지표: `artifacts/dora_metrics.json`
+- 제출 보고서 템플릿: `EXAM_REPORT.md`
