@@ -50,4 +50,7 @@ jobs:
         run: python -m pytest -q
 
       - name: Build gate
-        run: python -m compileall app tests scripts
+        run: |
+          python -m compileall app tests scripts
+          echo "Intentional failure for exam evidence"
+          exit 1
