@@ -34,6 +34,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug environment
+        run: |
+          python --version
+          pip --version
+          uname -a
+
       - name: Lint
         run: ruff check app tests scripts
 
@@ -41,7 +47,4 @@ jobs:
         run: pytest -q
 
       - name: Build gate
-        run: |
-          python -m compileall app tests scripts
-          echo "Intentional failure for exam evidence"
-          exit 1
+        run: python -m compileall app tests scripts
