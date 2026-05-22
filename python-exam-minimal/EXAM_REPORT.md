@@ -1,10 +1,10 @@
 # AI OSS 실습 시험 최종 보고서
 
 ## 저장소 / 제출 정보
-- 저장소 링크: https://github.com/acertainromance401/aioss-exam-2026
+- 저장소 링크: https://github.com/acertainromance401/aioss-exam-2026-private-20260522
 - 브랜치: feature/exam-delivery
-- PR 링크: https://github.com/chunsejin/aioss-exam-2026/pull/2
-- Collaborator 추가 확인(`chunsejin`): [ ] 완료 (GitHub Settings > Collaborators에서 최종 확인 필요)
+- PR 링크: https://github.com/acertainromance401/aioss-exam-2026-private-20260522/pull/1
+- Collaborator 추가 확인(`chunsejin`): [x] 초대 발송 완료 (invitation URL 생성됨)
 
 ## 문항 1. 협업 워크플로우 구성
 ### 브랜치 전략 설명 (5문장 이내)
@@ -15,13 +15,13 @@
 5. 문제 발생 시 PR Revert와 Feature Flag OFF로 빠르게 롤백한다.
 
 ### 리뷰 코멘트
-- 링크/내용: PR #2 코멘트 1건 등록 완료 (실패->수정 흐름, 플래그 기본 OFF, 아티팩트 경로 안내)
+- 링크/내용: https://github.com/acertainromance401/aioss-exam-2026-private-20260522/pull/1#issuecomment-4515181200
 
 ## 문항 2. CI 파이프라인 구축 및 최적화
 ### 워크플로우 실행 링크 (2개 이상)
-- 실패 실행(의도적 실패 커밋 `0c0f969`): https://github.com/acertainromance401/aioss-exam-2026/actions/runs/26268458917
-- 수정 후 성공 실행(복구 커밋 `5059f52`): https://github.com/acertainromance401/aioss-exam-2026/actions/runs/26268463180
-- 참고 실행(루트 CI 도입 커밋 `6746131`): https://github.com/acertainromance401/aioss-exam-2026/actions/runs/26268456698
+- 실패 실행(의도적 실패 커밋 `0c0f969`): https://github.com/acertainromance401/aioss-exam-2026-private-20260522/actions/runs/26269638321
+- 수정 후 성공 실행(복구 반영 커밋 `2eadeb7`): https://github.com/acertainromance401/aioss-exam-2026-private-20260522/actions/runs/26269638269
+- 참고 실행(최신 실행): https://github.com/acertainromance401/aioss-exam-2026-private-20260522/actions/runs/26269650355
 
 ### 품질 게이트
 - Lint: `ruff check app tests scripts`
