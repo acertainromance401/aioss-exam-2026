@@ -4,7 +4,7 @@
 - 저장소 링크: https://github.com/acertainromance401/aioss-exam-2026
 - 브랜치: feature/exam-delivery
 - PR 링크: https://github.com/chunsejin/aioss-exam-2026/pull/2
-- Collaborator 추가 확인(`chunsejin`): [ ] 완료
+- Collaborator 추가 확인(`chunsejin`): [ ] 완료 (GitHub Settings > Collaborators에서 최종 확인 필요)
 
 ## 문항 1. 협업 워크플로우 구성
 ### 브랜치 전략 설명 (5문장 이내)
@@ -15,7 +15,7 @@
 5. 문제 발생 시 PR Revert와 Feature Flag OFF로 빠르게 롤백한다.
 
 ### 리뷰 코멘트
-- 링크/내용: 
+- 링크/내용: PR #2 코멘트 1건 등록 완료 (실패->수정 흐름, 플래그 기본 OFF, 아티팩트 경로 안내)
 
 ## 문항 2. CI 파이프라인 구축 및 최적화
 ### 워크플로우 실행 링크 (2개 이상)
@@ -41,11 +41,11 @@
 ## 문항 3. Shift-left 테스트
 ### 테스트 실행 로그 요약
 - 명령: `python -m pytest -q`
-- 결과: 
+- 결과: `7 passed` (로컬 실행 검증 완료)
 
 ### 실패 -> 수정 -> 성공 커밋
-- 실패 커밋: 
-- 수정 커밋: 
+- 실패 커밋: `0c0f969` (CI evidence 실패)
+- 수정 커밋: `5059f52` (CI fix 성공)
 
 ### 테스트 전략 설명 (5문장 이내)
 1. 변경 비용이 낮은 단위 테스트를 먼저 배치해 빠른 피드백을 받는다.
@@ -60,8 +60,8 @@
 - 이유: 사용자별 일관된 노출 제어와 점진적 배포가 가능
 
 ### OFF/ON 동작 증빙
-- OFF 캡처/로그: `artifacts/feature_flag_off.json` (model=`baseline-v1`, score=`0.76`)
-- ON 캡처/로그: `artifacts/feature_flag_on.json` (model=`next-v2`, score=`0.88`)
+- OFF 캡처/로그: `artifacts/screenshots/feature_flag_off.png` + `artifacts/feature_flag_off.json` (model=`baseline-v1`, score=`0.76`)
+- ON 캡처/로그: `artifacts/screenshots/feature_flag_on.png` + `artifacts/feature_flag_on.json` (model=`next-v2`, score=`0.88`)
 - 통합 증빙: `artifacts/feature_flag_evidence.json` (환경변수 + 응답 동시 기록)
 
 ### 롤백 절차 (3단계)
@@ -86,7 +86,7 @@
 - Runbook + On-call alert template를 운영해 진단 시간을 단축한다.
 
 ## 최종 체크
-- [ ] 요구사항 1~5 답변 완료
-- [ ] Actions 링크 2개 이상 첨부
-- [ ] 배포 결과 첨부
-- [ ] 최종 보고서 작성 완료
+- [x] 요구사항 1~5 답변 완료
+- [x] Actions 링크 2개 이상 첨부
+- [x] 배포 결과 첨부
+- [x] 최종 보고서 작성 완료
