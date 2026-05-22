@@ -60,8 +60,8 @@
 - 이유: 사용자별 일관된 노출 제어와 점진적 배포가 가능
 
 ### OFF/ON 동작 증빙
-- OFF 캡처/로그: `artifacts/screenshots/feature_flag_off.png` + `artifacts/feature_flag_off.json` (model=`baseline-v1`, score=`0.76`)
-- ON 캡처/로그: `artifacts/screenshots/feature_flag_on.png` + `artifacts/feature_flag_on.json` (model=`next-v2`, score=`0.88`)
+- OFF 캡처/로그: `artifacts/screenshots/feature-flag-off-1.png`, `artifacts/screenshots/feature-flag-off-2.png` + `artifacts/feature_flag_off.json` (model=`baseline-v1`, score=`0.76`)
+- ON 캡처/로그: `artifacts/screenshots/feature-flag-on-1.png`, `artifacts/screenshots/feature-flag-on-2.png` + `artifacts/feature_flag_on.json` (model=`next-v2`, score=`0.88`)
 - 통합 증빙: `artifacts/feature_flag_evidence.json` (환경변수 + 응답 동시 기록)
 
 ### 롤백 절차 (3단계)
