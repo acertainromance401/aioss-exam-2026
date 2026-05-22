@@ -1,0 +1,8 @@
+{
+  "mode": "OFF",
+  "response": {
+    "user_id": "user-101",
+    "model": "baseline-v1",
+    "score": 0.76
+  }
+}

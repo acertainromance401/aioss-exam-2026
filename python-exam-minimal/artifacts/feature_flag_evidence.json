@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-05-22T04:38:48.258535+00:00",
+  "user_id": "user-101",
+  "off_env": {
+    "FEATURE_NEXT_RECOMMENDER": "false",
+    "FEATURE_NEXT_RECOMMENDER_ROLLOUT": "100"
+  },
+  "on_env": {
+    "FEATURE_NEXT_RECOMMENDER": "true",
+    "FEATURE_NEXT_RECOMMENDER_ROLLOUT": "100"
+  },
+  "off_response": {
+    "user_id": "user-101",
+    "model": "baseline-v1",
+    "score": 0.76
+  },
+  "on_response": {
+    "user_id": "user-101",
+    "model": "next-v2",
+    "score": 0.88
+  }
+}

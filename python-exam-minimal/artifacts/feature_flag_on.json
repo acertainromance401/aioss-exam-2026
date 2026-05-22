@@ -1,0 +1,8 @@
+{
+  "mode": "ON",
+  "response": {
+    "user_id": "user-101",
+    "model": "next-v2",
+    "score": 0.88
+  }
+}

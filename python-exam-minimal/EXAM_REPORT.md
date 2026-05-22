@@ -35,8 +35,8 @@
 ### 최적화 전/후 시간 비교표
 | 구분 | 실행 시간 | 비고 |
 |---|---:|---|
-| 최적화 전 |  |  |
-| 최적화 후 |  | pip cache 적용 |
+| 최적화 전 | 0.48분 (28.8초) | 성공 실행 기준(`5059f52`) |
+| 최적화 후 | 0.35분 (21.0초) | pip cache 적용 후 최신 성공 실행(`6f27ee7`) |
 
 ## 문항 3. Shift-left 테스트
 ### 테스트 실행 로그 요약
@@ -60,8 +60,9 @@
 - 이유: 사용자별 일관된 노출 제어와 점진적 배포가 가능
 
 ### OFF/ON 동작 증빙
-- OFF 캡처/로그: 
-- ON 캡처/로그: 
+- OFF 캡처/로그: `artifacts/feature_flag_off.json` (model=`baseline-v1`, score=`0.76`)
+- ON 캡처/로그: `artifacts/feature_flag_on.json` (model=`next-v2`, score=`0.88`)
+- 통합 증빙: `artifacts/feature_flag_evidence.json` (환경변수 + 응답 동시 기록)
 
 ### 롤백 절차 (3단계)
 1. `FEATURE_NEXT_RECOMMENDER=false`로 즉시 비활성화
