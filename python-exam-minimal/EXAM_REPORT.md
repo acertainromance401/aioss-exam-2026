@@ -4,7 +4,7 @@
 - 저장소 링크: https://github.com/acertainromance401/aioss-exam-2026-private-20260522
 - 브랜치: feature/exam-delivery
 - PR 링크: https://github.com/acertainromance401/aioss-exam-2026-private-20260522/pull/1
-- Collaborator 추가 확인(`chunsejin`): [x] 초대 발송 완료 (invitation URL 생성됨)
+- Collaborator 추가 확인(`chunsejin`): [ ] 초대 발송 완료 (수락 대기)
 
 ## 문항 1. 협업 워크플로우 구성
 ### 브랜치 전략 설명 (5문장 이내)
